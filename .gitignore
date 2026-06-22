@@ -1,0 +1,8 @@
+node_modules/
+dist/
+.env
+*.log
+.DS_Store
+migrations/
+.replit_integration_files/
+node_modules/.tmp/

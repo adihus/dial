@@ -1,0 +1,4 @@
+- [OpenAI blueprint scaffolds](openai-blueprint-scaffolds.md) — the OpenAI integration blueprint dumps unused audio/chat/image/batch files + a chat.ts that redefines conversations/messages; delete them to avoid schema/type clashes.
+- [Public chat abuse controls](public-chat-abuse-controls.md) — unauthenticated endpoints that call paid OpenAI/email must have rate limits + length caps + session-token binding before deploy.
+- [Public page visibility & links](public-page-visibility.md) — address page is profile+optional chat; visible if published OR active agent; profile links must be http(s)-only on write AND render.
+- [Receptionist finalize resilience](receptionist-finalize-resilience.md) — slow gpt-5 chain can leave convos stuck at ready_for_summary (no email); finalize must reuse extraction, be idempotent, self-heal on reconnect.
